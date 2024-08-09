@@ -14,6 +14,17 @@ function randomSquare() {
     randomSquare.classList.add('mole')
 }
 
+squares.forEach(square => {
+    square.addEventListener('mousedown' () => {
+        if (square.id == hitPosition){
+            result++;
+            score.textContent = result;
+            hitPosition = null;
+
+        }
+    })
+})
+
 function moveMole() {
     let timerId = null;
     timerId = setInterval(randomSquare, 500)
