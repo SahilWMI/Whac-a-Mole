@@ -1,4 +1,4 @@
-const squares = document.querySelectorAll('.squre');
+const squares = document.querySelectorAll('.square');
 const mole = document.querySelector('.mole');
 const timeLeft = document.querySelector('#time-left');
 const score = document.querySelector('#score');
@@ -18,7 +18,7 @@ function randomSquare() {
 }
 
 squares.forEach(square => {
-    square.addEventListener('mousedown' () => {
+    square.addEventListener('mousedown', () => {
         if (square.id == hitPosition) {
             result++;
             console.log(result)
